@@ -29,13 +29,16 @@ export class Store {
 
   setState(state: State) {
     this._store.next(state);
+    console.log('setState', this._store);
   }
 
   getState(): State {
+    console.log('getState', this._store);
     return this._store.value;
   }
 
   purge() {
     this._store.next(defaultState);
+    console.log('purge', this._store);
   }
 }
