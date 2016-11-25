@@ -3,14 +3,14 @@ import { BrowserModule } from '@angular/platform-browser'
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http'
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic'
-import { App, routes, providers } from './app'
-import { Main, Notes, About, Auth } from './app/containers'
+import { App, routes, providers } from './app/index'
+import { Main, Notes, About, Auth } from './app/containers/index'
 import { 
   AppBar,
   NoteCard,
   NoteCreator,
   ColorPicker
-} from './app/ui'
+} from './app/ui/index'
 
 @NgModule({
   declarations: [

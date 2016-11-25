@@ -1,7 +1,7 @@
-import { AuthService } from './services';
+import { AuthService } from './services/index';
 import { RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core' 
-import { Main, Notes, About, Auth } from './containers';
+import { Main, Notes, About, Auth } from './containers/index';
 
 
 export const routes: ModuleWithProviders = RouterModule.forRoot([

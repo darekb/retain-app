@@ -25,7 +25,7 @@ const _store = new BehaviorSubject<State>(defaultState);
 @Injectable()
 export class Store {
   private _store = _store;
-  changes = this._store.asObservable().distinctUntilChanged()
+  changes = this._store.asObservable().distinctUntilChanged();
 
   setState(state: State) {
     this._store.next(state);
